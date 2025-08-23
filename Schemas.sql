@@ -1,0 +1,15 @@
+CREATE DATABASE ola;
+
+USE ola;
+
+SELECT * FROM booking;
+
+
+ALTER TABLE booking 
+DROP COLUMN `Unnamed:_19`,
+DROP COLUMN `Unnamed:_20`;
+
+
+ALTER TABLE booking 
+CHANGE COLUMN `#NAME?` Time VARCHAR(50);
+
